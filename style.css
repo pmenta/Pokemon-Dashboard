@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+.container {
+    display: flex;
+}
+
+.menu__lateral {
+    width: 250px;
+    background-color: #333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__logo img {
+    width: 225px;
+    margin-left: 10px;
+}
+
+.menu__nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.menu__nav img {
+    width: 100px;
+    margin: auto;
+}
+.menu__nav a {
+    text-decoration: none;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.main__container {
+    background-color: #C4C4C4;
+    width: 100%;
+}
+
+
+.cards {
+    display: flex;
+}
+
+.card__content {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 250px;
+    border-radius: 16px;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.575);
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.card__info h2{
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 50px;
+    color: #FF8B00;
+}
+.card__info p {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.card__content img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+.cards__container {
+    display: flex;
+}
+.cards__container .card__content img {
+    margin-right: 5px;
+}
+.cards__container .card__content {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card1 {
+    display: flex;
+}
+.card2 {
+    display: flex;
+}
+
+.card1 {
+    padding: 0px 30px;
+    border-right: 1px solid #333;
+}
+.card1 img {
+    margin-left: 30px;
+}
+
+.card2 {
+    padding: 0px 30px;
+}
+.card2 img {
+    margin-left: 30px;
+}
+
+.pokedex__card {
+    background-color: white;
+    width: 600px;
+    margin-left: 100px;
+    margin-top: 70px;
+    border-radius: 16px;
+}
+.pokedex__card header {
+    display: flex;
+    justify-content: space-between;
+}
+.pokedex__card header img {
+        width: 60px;
+        margin-top: 10px;
+        margin-right: 15px;
+}
+.pokedex__card header h1 {
+    margin-left: 30px;
+    margin-top: 12.5px;
+    font-weight: 400;
+}
+.pesquisa__pokedex {
+    display: flex;
+    flex-direction: column;
+}
+
+.pesquisa__pokedex input {
+    width: 90%;
+    height: 60px;
+    margin: auto;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    background-color: #C4C4C4;
+    
+}
+
+.pokedex__card main p {
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 24px;
+    width: 90%;
+}
+
+
+.pesquisa__button {
+    display: flex;
+}
+
+.pesquisa__button input {
+    width: 30%;
+    height: 35px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    outline: #333;
+
+}
+
+.cards__baixo {
+    display: flex;
+}
+
+.pokemon__container {
+    margin-top: 70px;
+    background-color: white;
+    border-radius: 16px;
+    margin-left: 15px;
+    width: 25%;
+}
+
+.pokemon__container p {
+    margin-top: 170px;
+    text-align: center;
+}
+
+.pokemon-picture {
+    margin-top: 30px;
+    text-align: center;
+}
+.pokemon-info {
+    text-align: center;
+}

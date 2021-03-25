@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokéboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside class="menu__lateral">
+            <div class="menu__logo">
+            <img src="images/Pokémon-Logo-PNG.png" alt="pokemon__logo" class="poke__logo">
+            </div>
+            <div class="menu__nav">
+            <img src="images/pokebola1.png" alt="pokebola">
+            <a href="#">DASHBOARD</a>
+            <img src="images/pokebola2.png" alt="pokebola">
+            <a href="#">GAMES</a>
+            <img src="images/pokebola3.png" alt="pokebola">
+            <a href="#">POKEDEX</a>
+            </div>
+        </aside>
+        <main class="main__container">
+            <header class="cards">
+                <div class="card__content">
+                    <div class="card__info">
+                        <p>Pokémons</p>
+                        <h2>898</h2>
+                    </div>
+                    <img src="images/pikachu.png" alt="">
+                </div>
+                <div class="cards__container">
+                    <div class="card__content">
+                    <div class="card1">
+                        <div class="card__info">
+                            <p>Regiões</p>
+                            <h2>8</h2>
+                        </div>
+                        <img src="images/pin.png" alt="pin">
+                    </div>
+                    <div class="card2">
+                        <div class="card__info">
+                            <p>Jogos</p>
+                            <h2>36</h2>
+                        </div>
+                        <img src="images/pkego.jpg" alt="pokemon go">
+                    </div>
+                    </div>
+                </div>
+            </header>
+            <div class="cards__baixo">
+            <div class="pokedex__card" id="pokedex__card">
+                <header>
+                    <h1>POKEDEX</h1>
+                    <img src="images/pokedex.png" alt="pokedex">
+                </header>
+                <main>
+                    <div class="pesquisa__pokedex">
+                        <input type="text" placeholder="Insira o nome ou número aqui">
+                        <p>Realize a busca com o nome ou número do pokemon na pokedex.  </p>
+                    </div>
+                    <div class="pesquisa__button">
+                        <input type="submit" value="Pesquisar" onclick="pesquisa()">
+                    </div>
+                </main>
+            </div>
+            <section class="pokemon__container">
+                <p>O pokémon aparecera aqui!</p>
+            </section>
+            </div>
+        </main>
+        
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
