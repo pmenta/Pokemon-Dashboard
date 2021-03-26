@@ -4,11 +4,15 @@ const baseUrl = 'https://pokeapi.co/api/v2/pokemon/';
 // Get Elements --------------------------------------------
 const searchInput = getElement('.pesquisa__pokedex input'),
       searchButton = getElement('.pesquisa__button input'),
-      container = getElement('.pokemon__container');
+      container = getElement('.pokemon__container'),
+      loading = getElement('.c-loader'),
+      info = getElement('.pesquisa__info');
 
 var pokeName, // Nome ou numero passado na caixa de busca
     pokemon, // Responsavel por guardar os dados recebidos da API
     card; // Responsavel por receber o HTML 
+
+var cont = 0 // Contagem de vezes que o usuario pesquisou por um pokemon
 
 // Build Functions --------------------------------------------
 
@@ -42,16 +46,27 @@ function pesquisa() {
 function startApp(pokeName) {
   
   requestPokeInfo(baseUrl, pokeName);
-
-  setTimeout(function () {
-    container.innerHTML = createCard();
-}, 2000);
+  cont += 1
+  if (cont == 1) {
+    info.style.display = 'none';
+    loading.style.display = 'block'
+    setTimeout(function () {
+      container.innerHTML = createCard();
+  }, 2000);  
+  }
+  else if (cont > 1) {
+    container.innerHTML = `<div class="c-loader"></div>`;
+    loader = getElement('.c-loader')
+    loader.style.display = 'block'
+    setTimeout(function () {
+      container.innerHTML = createCard();
+  }, 2000);
+  }
+  
 }
 
-card = document.getElement('pokemon__container')
-
 function createCard () {
-  card = `
+   card = `
     <div class="pokemon-picture">
       <img src="${pokemon.sprites.front_default}" alt="Sprite of ${pokemon.name}">
     </div>
@@ -63,4 +78,5 @@ function createCard () {
         <h3 class="height">Height: ${pokemon.height  / 10}m</h3>
     </div>`;
   return card;
+  
 }

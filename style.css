@@ -191,3 +191,21 @@
 .pokemon-info {
     text-align: center;
 }
+
+.c-loader {
+    display: none;
+    animation: is-rotating 1s infinite;
+    border: 6px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: #51d4db;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    margin-top: 160px;
+}
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
